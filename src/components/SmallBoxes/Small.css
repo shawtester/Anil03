@@ -1,0 +1,43 @@
+/* Mobile-only styles */
+.C {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 1rem 0;
+    box-sizing: border-box; 
+}
+
+.B {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.A {
+    flex: 0 0 calc(33.3333% - 1rem); /* Display 3 items at a time */
+    cursor: pointer;
+}
+
+.D {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.E {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.E h3 {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Hide carousel on larger screens */
+@media (min-width: 769px) {
+    .C {
+        display: none;
+    }
+}
